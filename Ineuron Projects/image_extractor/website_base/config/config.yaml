@@ -1,0 +1,10 @@
+website:
+    secure_bundle : .\creds\secure-connect-ineuron.zip
+    token : 
+        client_id: PeNdcDgBPzewCEzwaHuAYCYv
+        client_secret : 98_A9NZWpByRz--_3,apsd.dESiHmYg8FY8DKulgiHxEbnA9JWsq-9uJmEWgbkrsrwyqUw_YJnZNxkt1P69k+PkCjnrGrU+RIM9aOiYnMa_QO5MynDY89P6SvtZo4ZfF
+    keyspace : image_extractor
+
+aws:
+    key : AKIAWPD4UVDLVSQP3NEL
+    secret : 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

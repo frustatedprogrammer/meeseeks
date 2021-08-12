@@ -1,0 +1,23 @@
+<style>
+
+</style>
+{% extends "base.html"%}{% block title %}share{% endblock %}
+{%block content%}
+</br>
+</br>
+<h5>unshared users</h5>
+<form method="post">
+{% for id  in unshared_ids %}
+    <button type="submit" style="padding:20px" class="btn btn-primary" name="share_user" value="{{id}}">{{id}}</button>
+{%endfor%}
+</form>
+</br>
+<h5>shared users</h5>
+<form method="post">
+{% for id  in shared_users %}
+    <button type="submit" style="padding:20px" class="btn btn-primary" name="unshare_user" value="{{id}}">{{id}}</button>
+{%endfor%}
+</form>
+</br>
+
+{%endblock%}

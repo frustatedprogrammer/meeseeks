@@ -1,0 +1,49 @@
+{% extends "base.html"%}
+
+{% block title %}Gallery{% endblock %}
+{%block content%}
+</br>
+Welcome to gallery {{user.first_name}} {{user.last_name}}
+
+</br>
+</br>
+</br>
+{%if user_dict%}
+<form method="post">
+{% for key  in user_dict %}
+    <button type="submit" class="btn btn-primary" name="user_folder" value="{{key}}">{{key}}</button>
+{%endfor%}
+</form>
+
+</br>
+
+{%if folder_dict %}
+<form method="post">
+{%for key,values in folder_dict.items()%}
+{% for k in values %}
+    <button type="submit" class="btn btn-primary" name="folder_name" value="{{key,k}}">{{k}}</button>
+{%endfor%} {%endfor%}
+</form>
+{%endif%}
+
+</br>
+
+{%if render_dict %}
+<div class="gallery">
+
+    <div class="row">
+
+        {% for i in render_dict %}
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0"> <img src={{i}} alt="image"  class="w-100 shadow-1-strong rounded mb-4" style="width:100%" ></div>
+        {%endfor%}
+
+    </div>
+    </br>
+        </br>
+</div>
+{%endif%}
+{%else%}
+<h5>Gallery is empty!</h5>
+{%endif%}
+
+{%endblock%}

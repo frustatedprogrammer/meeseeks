@@ -1,0 +1,2383 @@
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:03] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:03] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:04] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:04] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:09] "[37mPOST /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:17] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:39:22] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:48] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:50] "[37mGET /logout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:55] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:56] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:57] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:57] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:57] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:45:59] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:46:04] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:46:09] "[37mPOST /login HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "G:\code\python_repo\image_extractor\website_base\website\auth.py", line 22, in login
+    check_user = User.objects(email_id=email).first()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 416, in __call__
+    return self.filter(*args, **kwargs)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 691, in filter
+    raise CQLEngineException("None values on filter are not allowed")
+cassandra.cqlengine.CQLEngineException: None values on filter are not allowed
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:46:15] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:54:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:54:40] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:54:50] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:56:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:56:52] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:57:03] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:57:54] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:39] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:50] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:51] "[37mGET /logout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:52] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:53] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:54] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:57] "[33mGET /home HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:59] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:58:59] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:02] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:03] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:04] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:10] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:18] "[37mPOST /login HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "G:\code\python_repo\image_extractor\website_base\website\auth.py", line 22, in login
+    check_user = User.objects(email_id=email).first()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 416, in __call__
+    return self.filter(*args, **kwargs)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 691, in filter
+    raise CQLEngineException("None values on filter are not allowed")
+cassandra.cqlengine.CQLEngineException: None values on filter are not allowed
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:21] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:33] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:37] "[37mGET /logout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:44] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:44] "[37mGET /login?next=%2Flogout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:53] "[37mPOST /login?next=%2Flogout HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "G:\code\python_repo\image_extractor\website_base\website\auth.py", line 22, in login
+    check_user = User.objects(email_id=email).first()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 416, in __call__
+    return self.filter(*args, **kwargs)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 691, in filter
+    raise CQLEngineException("None values on filter are not allowed")
+cassandra.cqlengine.CQLEngineException: None values on filter are not allowed
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 15:59:56] "[35m[1mPOST /login?next=%2Flogout HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:00:19] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:00:19] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:00:26] "[37mPOST /login?next=%2F HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "G:\code\python_repo\image_extractor\website_base\website\auth.py", line 22, in login
+    check_user = User.objects(email_id=email).first()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 416, in __call__
+    return self.filter(*args, **kwargs)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 691, in filter
+    raise CQLEngineException("None values on filter are not allowed")
+cassandra.cqlengine.CQLEngineException: None values on filter are not allowed
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:00:32] "[35m[1mPOST /login?next=%2F HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:04] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:07] "[37mGET /logout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:13] "[31m[1mPOST /logout HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:22] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:22] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:25] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:25] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:27] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:27] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:28] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:40] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:44] "[37mGET /logout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:03:52] "[31m[1mPOST /logout HTTP/1.1[0m" 405 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:19] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:19] "[37mGET /login?next=%2Flogout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:22] "[37mGET /login?next=%2Flogout HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:29] "[32mPOST /login?next=%2Flogout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:33] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:33] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:34] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:35] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:36] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:07:36] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:16] "[32mPOST /sign-up HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:16] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:22] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:24] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:26] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:27] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:28] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:28] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:08:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:14:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:14:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:14:47] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:14:48] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:15:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:15:00] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 12, in home
+    download_images(str(topic))
+  File "G:\code\python_repo\image_extractor\website_base\website\helper\image_downloader.py", line 41, in download_images
+    os.mkdir("./photos/" + topic)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: './photos/batman'
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:15:11] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:21:10] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:21:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:21:14] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:24:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:24:42] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:25:27] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:25:30] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:26:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:27:01] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:29:12] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:29:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:29:14] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:29:21] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:29:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:29:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:30:03] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:30:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:30:40] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:34:32] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:34:32] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:34:33] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:34:33] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:34:45] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:34:46] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 14, in home
+    download_images(topic, n_images, user_dir)
+  File "G:\code\python_repo\image_extractor\website_base\website\helper\image_downloader.py", line 36, in download_images
+    if counter<=n_images:
+TypeError: '<=' not supported between instances of 'int' and 'str'
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:35:09] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:36:34] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:38:22] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:38:27] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:38:27] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:39:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:39:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:39:35] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:53:33] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:57:28] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 16:58:12] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:07:38] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:07:41] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:07:41] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:07:44] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:08:50] "[32mPOST /sign-up HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:08:50] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:09:50] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:11:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 17:11:01] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:32:57] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:32:57] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:32:58] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:32:58] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:33:00] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:33:23] "[32mPOST /sign-up HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:33:23] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Aug/2021 21:35:43] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:49:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:49:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:49:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:49:34] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:50:28] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:50:28] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:50:35] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:50:35] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in gallery
+    user_dict = {i: ["static/gallery/" + i + "/" + x for x in os.listdir("./website/static/gallery/" + i)] for i in os.listdir("./website/static/gallery")}
+FileNotFoundError: [WinError 3] The system cannot find the path specified: './website/static/gallery'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:50:39] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:51:38] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:51:41] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:51:44] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:56:41] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 33, in gallery
+    render_dict = {user_dir:user_dict[user_dir]}
+KeyError: 'luckybot-999(noobjesh@gmail.com)'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:56:44] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/ds.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/cd.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:48] "[37mGET /static/gallery/luckybot-999(noobjesh@gmail.com)/adfg.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/10.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/7.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/8.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:52] "[37mGET /static/gallery/Clark-Kent(superman@gmail.com)/9.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:54] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:55] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:58] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:57:59] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:58:00] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:58:01] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:58:03] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:58:04] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 13:58:05] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:48:51] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 29, in gallery
+    os.listdir("./website/static/image-extractor")}
+FileNotFoundError: [WinError 3] The system cannot find the path specified: './website/static/image-extractor'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:48:53] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in gallery
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in <dictcomp>
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 27, in <dictcomp>
+    os.listdir("./website/static/image-extractor/" + user_dir + "/" + user_sub_dir)] for user_sub_dir
+NotADirectoryError: [WinError 267] The directory name is invalid: './website/static/image-extractor/luckybot-999(noobjesh@gmail.com)/1.jpg'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:49:31] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in gallery
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in <dictcomp>
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 27, in <dictcomp>
+    os.listdir("./website/static/image-extractor/" + user_dir + "/" + user_sub_dir)] for user_sub_dir
+NotADirectoryError: [WinError 267] The directory name is invalid: './website/static/image-extractor/luckybot-999(noobjesh@gmail.com)/1.jpg'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:50:48] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:50:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:52:04] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in gallery
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in <dictcomp>
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 27, in <dictcomp>
+    os.listdir("./website/static/image-extractor/" + user_dir + "/" + user_sub_dir)] for user_sub_dir
+NotADirectoryError: [WinError 267] The directory name is invalid: './website/static/image-extractor/luckybot-999(noobjesh@gmail.com)/1.jpg'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:52:07] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in gallery
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 25, in <dictcomp>
+    folder_structure = {user_dir: {
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 27, in <dictcomp>
+    os.listdir("./website/static/image-extractor/" + user_dir + "/" + user_sub_dir)] for user_sub_dir
+NotADirectoryError: [WinError 267] The directory name is invalid: './website/static/image-extractor/luckybot-999(noobjesh@gmail.com)/1.jpg'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:53:05] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:55:14] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:55:18] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 42, in gallery
+    files=folder_structure[user_id][folder_id]
+KeyError: 'Clark-Kentsuperman@gmail.com'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:55:19] "[35m[1mPOST /gallery HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:website:Exception on /gallery [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 42, in gallery
+    files=folder_structure[user_id][folder_id]
+KeyError: '(Clark-Kent(superman@gmail.com)'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:56:31] "[35m[1mPOST /gallery HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:56:33] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:56:35] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:56:36] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 42, in gallery
+    files=folder_structure[user_id][folder_id]
+KeyError: '(Clark-Kent(superman@gmail.com)'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 18:56:38] "[35m[1mPOST /gallery HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:09] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:11] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:13] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:15] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:15] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:15] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:15] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:15] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:17] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:17] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:17] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:17] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:17] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:17] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:18] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:19] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:19] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:19] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:19] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:19] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:20] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:20] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:20] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:20] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:20] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:20] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:22] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:22] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:22] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:22] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:22] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:23] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:23] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:23] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:23] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:23] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:23] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:25] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:25] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:26] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:27] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:29] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:30] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:01:59] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:00] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:01] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:01] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:01] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:01] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:01] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:02] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:02] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:02] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:02] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:02] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:03] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:04] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:04] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:05] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:06] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:07] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:07] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:45] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:48] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:51] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:51] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:52] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:53] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:55] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:55] "[37mGET /sign-up HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:02:57] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:03] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:09] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:13] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:14] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:15] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:17] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:18] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:19] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:23] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:24] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:25] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:26] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:03:27] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:03] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:08] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:14] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:15] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:17] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:18] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:19] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:21] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:21] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:25] "[32mGET /share HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:13:25] "[37mGET /login?next=%2Fshare HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:14:29] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:14:33] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:14:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:15:39] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:15:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:15:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:01] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:02] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:04] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:05] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:07] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:08] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:09] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:10] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:11] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:13] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:14] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:25] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:54] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:55] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:57] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:58] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:16:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:02] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:03] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:04] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:05] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:06] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:07] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:08] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:09] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:10] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:11] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:12] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:13] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:17:14] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:20:07] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:20:12] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:20:14] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:20:15] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:20:57] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 52, in gallery
+    return render_template("gallery.html", user=current_user, user_dict=user_array, folder_dict=None, render_dict=None)
+UnboundLocalError: local variable 'user_array' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:20:58] "[35m[1mGET /gallery HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:23:16] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:24:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:24:16] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:24:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:24:45] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:38] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:40] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:41] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:44] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:44] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:45] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:46] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:52] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:54] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:54] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:55] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:57] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:58] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:59] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:25:59] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:26:02] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:26:04] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:00] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:16] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:18] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:19] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:20] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:23] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:25] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:27] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:28] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:30] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:38:34] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:50:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:50:50] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:50:51] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:50:51] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:50:57] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:50:57] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:51:00] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:52:54] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:52:57] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:59:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:59:23] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 19:59:24] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:01:19] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:01:21] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:02:18] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:02:19] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:03:16] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:03:22] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:03:23] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:03:28] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:03:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:09:33] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:09:36] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:09:58] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:11:52] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:11:54] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:13:06] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:13:07] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:13:15] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:website:Exception on /share [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 62, in share
+    emailId.remove(current_user.email_id)
+KeyError: 'noobjesh@gmail.com'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:27:35] "[35m[1mGET /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:website:Exception on /share [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 61, in share
+    unshared_users = {i for i in user_obj}
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 61, in <setcomp>
+    unshared_users = {i for i in user_obj}
+TypeError: unhashable type: 'User'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:33:44] "[35m[1mGET /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:website:Exception on /share [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 61, in share
+    unshared_users = {i for i in user_obj}
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 61, in <setcomp>
+    unshared_users = {i for i in user_obj}
+TypeError: unhashable type: 'User'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:34:48] "[35m[1mGET /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:36:20] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:37:19] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:37:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:37:22] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 20:39:59] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:11:58] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:11:59] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:00] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:08] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:09] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:10] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:10] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:10] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:10] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:10] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/batman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/bruce/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:11] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:12] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:12] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:12] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:12] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:12] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:12] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:13] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:13] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:13] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:13] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:13] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:13] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:13] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/superman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:14] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:14] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:14] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:14] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:14] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/spiderman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/peter/5.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:15] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/clark/4.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:12:17] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:37] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:41] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:43] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:47] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:47] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:49] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:50] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:51] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:52] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:53] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:15:55] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:18:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:18:20] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:28:39] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:28:39] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:28:44] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:28:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 21:28:46] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:44:28] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:44:30] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 92, in share
+    sharedUsers.create(id=uuid4(),folder_id = share_id, shared_folder_id=folder_id)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 673, in create
+    return cls.objects.create(**kwargs)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 981, in create
+    return self.model(**kwargs) \
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 730, in save
+    self.validate()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 606, in validate
+    val = col.validate(v)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\columns.py", line 385, in validate
+    raise ValidationError('{0} {1} is not a string'.format(self.column_name, type(value)))
+cassandra.cqlengine.ValidationError: shared_folder_id <class 'list'> is not a string
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:44:33] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:46:26] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:46:29] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 93, in share
+    sharedUsers.save()
+TypeError: save() missing 1 required positional argument: 'self'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:46:32] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:47:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:47:23] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 86, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:47:26] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:51:24] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:52:22] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:53:14] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:53:22] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 86, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:53:25] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:53:30] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:53:33] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:53:36] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 86, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 22:53:37] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:07:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:07:46] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:07:58] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:07:59] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:08:02] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:09:23] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:09:26] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:11:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:11:09] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 92, in share
+    new_rec = sharedUsers.create(id=uuid4(),folder_id = folder_id, shared_folder_id=shared_folder)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 673, in create
+    return cls.objects.create(**kwargs)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 981, in create
+    return self.model(**kwargs) \
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 730, in save
+    self.validate()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 606, in validate
+    val = col.validate(v)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\columns.py", line 385, in validate
+    raise ValidationError('{0} {1} is not a string'.format(self.column_name, type(value)))
+cassandra.cqlengine.ValidationError: folder_id <class 'list'> is not a string
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:11:17] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:01] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:03] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:11] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:15] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:18] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:20] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:22] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:24] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:26] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 101, in share
+    share_user_to_string = ','.join(updated_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:13:31] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:15:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:15:07] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:20:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:20:32] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 105, in share
+    sharedUsers(folder_id=share_id).update(shared_folder_id='')
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 785, in update
+    self.__dmlquery__(self.__class__, self,
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1456, in update
+    self._execute(statement)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1376, in _execute
+    results = _execute_statement(self.model, statement, self._consistency, self._timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1531, in _execute_statement
+    return conn.execute(s, params, timeout=timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\connection.py", line 353, in execute
+    result = conn.session.execute(query, params, timeout=timeout)
+  File "cassandra\cluster.py", line 2618, in cassandra.cluster.Session.execute
+  File "cassandra\cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid null value in condition for column id"
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:20:35] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 105, in share
+    sharedUsers(folder_id=share_id).update(shared_folder_id='')
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 785, in update
+    self.__dmlquery__(self.__class__, self,
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1456, in update
+    self._execute(statement)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1376, in _execute
+    results = _execute_statement(self.model, statement, self._consistency, self._timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1531, in _execute_statement
+    return conn.execute(s, params, timeout=timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\connection.py", line 353, in execute
+    result = conn.session.execute(query, params, timeout=timeout)
+  File "cassandra\cluster.py", line 2618, in cassandra.cluster.Session.execute
+  File "cassandra\cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid null value in condition for column id"
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:20:55] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:22:12] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:22:16] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 105, in share
+    sharedUsers(folder_id=share_id).update(shared_folder_id="")
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 785, in update
+    self.__dmlquery__(self.__class__, self,
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1456, in update
+    self._execute(statement)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1376, in _execute
+    results = _execute_statement(self.model, statement, self._consistency, self._timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1531, in _execute_statement
+    return conn.execute(s, params, timeout=timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\connection.py", line 353, in execute
+    result = conn.session.execute(query, params, timeout=timeout)
+  File "cassandra\cluster.py", line 2618, in cassandra.cluster.Session.execute
+  File "cassandra\cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid null value in condition for column id"
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:22:19] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:23:57] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:24:00] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 105, in share
+    sharedUsers(folder_id=share_id).update(shared_folder_id="test")
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 785, in update
+    self.__dmlquery__(self.__class__, self,
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1456, in update
+    self._execute(statement)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1376, in _execute
+    results = _execute_statement(self.model, statement, self._consistency, self._timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1531, in _execute_statement
+    return conn.execute(s, params, timeout=timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\connection.py", line 353, in execute
+    result = conn.session.execute(query, params, timeout=timeout)
+  File "cassandra\cluster.py", line 2618, in cassandra.cluster.Session.execute
+  File "cassandra\cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid null value in condition for column id"
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:24:02] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:33] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:33] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:34] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:34] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:40] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:42] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 105, in share
+    sharedUsers(folder_id=unshare_id).update(shared_folder_id="")
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\models.py", line 785, in update
+    self.__dmlquery__(self.__class__, self,
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1456, in update
+    self._execute(statement)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1376, in _execute
+    results = _execute_statement(self.model, statement, self._consistency, self._timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1531, in _execute_statement
+    return conn.execute(s, params, timeout=timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\connection.py", line 353, in execute
+    result = conn.session.execute(query, params, timeout=timeout)
+  File "cassandra\cluster.py", line 2618, in cassandra.cluster.Session.execute
+  File "cassandra\cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid null value in condition for column id"
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:25:47] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:27:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:27:23] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 105, in share
+    sharedUsers.objects(folder_id=unshare_id).update(shared_folder_id="")
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1326, in update
+    self._execute(us)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 404, in _execute
+    result = _execute_statement(self.model, statement, self._consistency, self._timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1531, in _execute_statement
+    return conn.execute(s, params, timeout=timeout, connection=connection)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\connection.py", line 353, in execute
+    result = conn.session.execute(query, params, timeout=timeout)
+  File "cassandra\cluster.py", line 2618, in cassandra.cluster.Session.execute
+  File "cassandra\cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Some partition key parts are missing: id"
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:27:25] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:31:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:31:43] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 107, in share
+    sharedUsers.objects(folder_id=unshare_id).update(id =p_id,shared_folder_id="")
+  File "C:\Users\Praja\anaconda3\lib\site-packages\cassandra\cqlengine\query.py", line 1307, in update
+    raise ValidationError("Cannot apply update to primary key '{0}' for {1}.{2}".format(col_name, self.__module__, self.model.__name__))
+cassandra.cqlengine.ValidationError: Cannot apply update to primary key 'id' for cassandra.cqlengine.query.sharedUsers
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:31:45] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:38:00] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:38:03] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:38:06] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 86, in share
+    update_share_user = add_user.shared_folder_id.split(",").append(user_folder_id)
+AttributeError: 'ModelQuerySet' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:38:08] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:39:58] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:40:00] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:40:06] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:40:09] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 100, in share
+    updated_share_user = remove_user.shared_folder_id.split(",").remove(user_folder_id)
+AttributeError: 'ModelQuerySet' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:40:11] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:41:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:41:41] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:41:46] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 86, in share
+    update_share_user = add_user.shared_folder_id.split(",").append(user_folder_id)
+AttributeError: 'ModelQuerySet' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:41:47] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 86, in share
+    update_share_user = add_user.shared_folder_id.split(",").append(user_folder_id)
+AttributeError: 'ModelQuerySet' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:41:50] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:41:53] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:42:34] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:42:37] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:42:40] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 100, in share
+    updated_share_user = remove_user.shared_folder_id.split(",").remove(user_folder_id)
+AttributeError: 'ModelQuerySet' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:44:12] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:44:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:44:45] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 100, in share
+    remove_user = sharedUsers.objects(folder_id=unshare_id)
+AttributeError: 'ModelQuerySet' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:44:48] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:45:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:45:24] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 101, in share
+    updated_share_user = remove_user.shared_folder_id.split(",").remove(user_folder_id)
+AttributeError: 'ModelQuerySet' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:45:26] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:49:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:49:48] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:49:53] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 108, in share
+    folder_id.add(unshare_id)
+AttributeError: 'list' object has no attribute 'add'
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:49:56] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:51:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:51:48] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:51:49] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 87, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:51:51] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:19] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:22] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:23] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:26] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:30] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:33] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:36] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:39] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 87, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [12/Aug/2021 23:56:45] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:cassandra.cluster:Cassandra host ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:0113080a-a313-428e-a1e5-459381f79ce1 removed
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:01:38] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:cassandra.cluster:New Cassandra host <Host: ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:c0e4c0ff-6b94-400a-9c2a-7c2ae2e603f1 us-west1> discovered
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:01:40] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 90, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:01:44] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:03:15] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:03:18] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 91, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:03:25] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:04:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:04:33] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 92, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:04:35] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:13:22] "[37mGET / HTTP/1.1[0m" 200 -
+WARNING:cassandra.connection:Heartbeat failed for connection (2321377414304) to ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:d04700a9-f5da-4eb8-977b-1bd63bc97f8b
+WARNING:cassandra.cluster:Host ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:d04700a9-f5da-4eb8-977b-1bd63bc97f8b has been marked down
+INFO:cassandra.cluster:Cassandra host ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:d04700a9-f5da-4eb8-977b-1bd63bc97f8b removed
+INFO:cassandra.cluster:New Cassandra host <Host: ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:46538830-5205-4b9a-99eb-494b3dd88c9f us-west1> discovered
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:19:23] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:19:25] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 86, in share
+    folder_check=add_user.shared_folder_id
+AttributeError: 'NoneType' object has no attribute 'shared_folder_id'
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:19:27] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:42] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:46] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:48] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:50] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:52] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 108, in share
+    updated_share_user = remove_user.shared_folder_id.split(",").remove(user_folder_id)
+ValueError: list.remove(x): x not in list
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:24:54] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:33] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:36] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:40] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:42] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:44] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:46] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:49] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 95, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:27:53] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 95, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:28:02] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:28:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:28:21] "[37mGET / HTTP/1.1[0m" 200 -
+WARNING:cassandra.cluster:Host ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:3d6fa565-484c-4d8e-a3ce-e7af05339d0c has been marked down
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:28:26] "[37mGET /share HTTP/1.1[0m" 200 -
+WARNING:cassandra.pool:Error attempting to reconnect to ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:3d6fa565-484c-4d8e-a3ce-e7af05339d0c, scheduling retry in 1.72 seconds: Connection to ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:3d6fa565-484c-4d8e-a3ce-e7af05339d0c was closed
+INFO:cassandra.cluster:Cassandra host ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:3d6fa565-484c-4d8e-a3ce-e7af05339d0c removed
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 95, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:28:28] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:28:33] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:cassandra.cluster:New Cassandra host <Host: ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:ff159719-4f55-4ffd-bc89-24dcf536c631 us-west1> discovered
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:32:07] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:32:09] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:32:11] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:32:38] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:32:59] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:33:26] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:33:47] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:33:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:33:58] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:34:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:34:05] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 72, in share
+    folder_id.remove(i.folder_id)
+ValueError: list.remove(x): x not in list
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:34:15] "[35m[1mGET /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:website:Exception on /share [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 72, in share
+    folder_id.remove(i.folder_id)
+ValueError: list.remove(x): x not in list
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:36:21] "[35m[1mGET /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:website:Exception on /share [GET]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 74, in share
+    folder_id.remove(i.folder_id)
+ValueError: list.remove(x): x not in list
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:37:06] "[35m[1mGET /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:40:03] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 96, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:40:07] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:42:21] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:42:30] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 97, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:42:38] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:44:29] "[37mGET /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 99, in share
+    share_user_to_string =','.join(update_share_user)
+TypeError: can only join an iterable
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:44:32] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:49:13] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:49:16] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:49:23] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:49:26] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:50:10] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:50:36] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:50:55] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:50:56] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /share [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 113, in share
+    updated_share_user = remove_user.shared_folder_id.split(",").remove(user_folder_id)
+ValueError: list.remove(x): x not in list
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:50:58] "[35m[1mPOST /share HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:51:02] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:51:34] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:51:34] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:51:39] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:51:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:51:42] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:51:47] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:31] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:34] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:35] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:37] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:39] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:40] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:42] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:52:58] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:05] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:07] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:10] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:12] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:14] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:16] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:18] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:51] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:55] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:56] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:53:59] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:54:01] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:54:11] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:57:27] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:57:29] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:57:34] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:57:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:57:42] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:57:42] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:57:43] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:59:17] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:59:19] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:59:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 00:59:22] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:28] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:30] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:31] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:31] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:31] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:31] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:31] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:33] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:33] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:33] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:36] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:38] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:38] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/bruce/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:38] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/bruce/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:40] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:40] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/batman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:40] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/batman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:40] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/batman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:00:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:02:59] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:03:00] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:03:02] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+WARNING:cassandra.connection:Heartbeat failed for connection (1703287032848) to ef200ebb-f14a-4978-be81-c6f873634923-us-west1.db.astra.datastax.com:29042:ff159719-4f55-4ffd-bc89-24dcf536c631
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:10:51] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:15:51] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:15:58] "[37mGET /gallery HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 49, in gallery
+    shared_users.add(current_user_id)
+AttributeError: 'list' object has no attribute 'add'
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:16:02] "[35m[1mPOST /gallery HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:17:11] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:17:12] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:17:14] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:17:15] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:17:16] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:17:17] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:17:18] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:20:05] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:20:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:20:09] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:22:38] "[37mGET /gallery HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 49, in gallery
+    shared_users.add(current_user_id)
+AttributeError: 'list' object has no attribute 'add'
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:22:40] "[35m[1mPOST /gallery HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:15] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:19] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:20] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:21] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:22] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:22] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:22] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/clark/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:25] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:25] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:25] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:25] "[37mGET /static/image-extractor/Clark-Kent(superman@gmail.com)/superman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:33] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:33] "[37mGET /login?next=%2F HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:41] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:45] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:48] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:55] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:58] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:59] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:23:59] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:24:00] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:24:01] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 57, in gallery
+    user_folder = {user_id: list(filtered_dictionary[user_id])}
+KeyError: 'luckybot-999(noobjesh@gmail.com)'
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:24:02] "[35m[1mPOST /gallery HTTP/1.1[0m" 500 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:18] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:26] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:29] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:44] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:46] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:48] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:48] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/bruce/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:48] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/bruce/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:53] "[37mPOST /share HTTP/1.1[0m" 200 -
+ERROR:website:Exception on /gallery [POST]
+Traceback (most recent call last):
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Praja\anaconda3\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "G:\code\python_repo\image_extractor\website_base\website\views.py", line 56, in gallery
+    user_folder = {user_id: list(filtered_dictionary[user_id])}
+KeyError: 'luckybot-999(noobjesh@gmail.com)'
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:26:55] "[35m[1mPOST /gallery HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:27:00] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:27:04] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:27:09] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:27:11] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:27:12] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:27:13] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:37] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:38] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:40] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:42] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:43] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:45] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:47] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:48] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:50] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:30:55] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:00] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:01] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:03] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:04] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:12] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:19] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:21] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:21] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/batman/1.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:21] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/batman/2.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:21] "[37mGET /static/image-extractor/luckybot-999(noobjesh@gmail.com)/batman/3.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:22] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:24] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:25] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:27] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:31:28] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:32:52] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:32:53] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:32:58] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:01] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:02] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:04] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:08] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:10] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:12] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:13] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:33:14] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:website:started
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:36:57] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:36:59] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:00] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:05] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:07] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:09] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:11] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:12] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:19] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:23] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:26] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:27] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:29] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:30] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:35] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:37] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:39] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:39] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:42] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:56] "[37mGET /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:57] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:37:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:01] "[37mGET /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:02] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:03] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:07] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:10] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:13] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:14] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:15] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:21] "[37mPOST /share HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:23] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:30] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:34] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:34] "[37mPOST /gallery HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Aug/2021 01:38:35] "[37mPOST /gallery HTTP/1.1[0m" 200 -
